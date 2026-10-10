@@ -1,7 +1,9 @@
 name: Deploy to GitHub Pages
 
-# A repository push runs checks only. Website deployment is explicitly manual.
+# Publish main automatically after the build and tests succeed.
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
